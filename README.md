@@ -1,4 +1,11 @@
-# Voicemod Wine Compatibility Shim
+# Voicemod on Linux: Wine Compatibility Shim
+
+[![Status: experimental](https://img.shields.io/badge/status-experimental-orange)](docs/VERIFICATION.md)
+![Platform: Fedora verified](https://img.shields.io/badge/Linux-Fedora%20verified-51A2DA?logo=fedora&logoColor=white)
+![Wine: no rebuild](https://img.shields.io/badge/Wine-no%20rebuild-722F37)
+![Audio: PipeWire](https://img.shields.io/badge/audio-PipeWire-blue)
+
+**A local shim for official Voicemod on Linux, without rebuilding Wine.** Clean Mic, capture with Hear Myself off, and Discord local loopback were verified on the Fedora setup documented below.
 
 An experimental compatibility layer for the official Voicemod Windows application on Wine and PipeWire. It uses a local `version.dll` proxy, a control device hosted by Wine's user-space driver process, and a PipeWire audio bridge. It does not require rebuilding or replacing the system Wine installation.
 
