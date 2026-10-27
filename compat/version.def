@@ -1,0 +1,5 @@
+LIBRARY version
+EXPORTS
+    GetFileVersionInfoW=proxy_GetFileVersionInfoW
+    GetFileVersionInfoSizeW=proxy_GetFileVersionInfoSizeW
+    VerQueryValueW=proxy_VerQueryValueW

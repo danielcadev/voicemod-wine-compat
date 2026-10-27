@@ -1,0 +1,26 @@
+# Only explicitly reviewed text files are eligible for this source snapshot.
+*
+!/.gitignore
+!/compat/
+!/docs/
+!/compat/version_proxy.c
+!/compat/audio_notifications.c
+!/compat/force_capture.c
+!/compat/clean_mic_fix.c
+!/compat/clean_mic_probe.c
+!/compat/vad_control.c
+!/compat/register_device.c
+!/compat/probe.c
+!/compat/audio_enum.c
+!/compat/session_probe.c
+!/compat/clean_mic_scanf_probe.c
+!/compat/version.def
+!/build-compat.sh
+!/launch-voicemod.sh
+!/clean_mic_inspect_links.py
+!/verify_audio.py
+!/analyze_audio.py
+!/README.md
+!/docs/VERIFICATION.md
+!/docs/HANDOFF.md
+!/docs/CLEAN_MIC.md
