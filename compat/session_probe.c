@@ -5,6 +5,7 @@
 #include <audiopolicy.h>
 #include <audioclient.h>
 #include <stdio.h>
+#include "probe_library.h"
 
 static LONG refs=1;
 static HANDLE created;
@@ -28,7 +29,7 @@ int main(void)
     IAudioSessionManager2 *manager=NULL;IAudioClient *client=NULL;
     WAVEFORMATEX *format=NULL;GUID session;
     CHECK(CoInitializeEx(NULL,COINIT_MULTITHREADED));
-    if (!LoadLibraryW(L"Z:\\home\\USERNAME\\voicemod_research\\compat\\version.dll")) return 2;
+    if (!load_probe_library()) return 2;
     Sleep(500);
     created=CreateEventW(NULL,FALSE,FALSE,NULL);
     CHECK(CoCreateInstance(&CLSID_MMDeviceEnumerator,NULL,CLSCTX_ALL,&IID_IMMDeviceEnumerator,(void **)&enumerator));

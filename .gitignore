@@ -24,3 +24,10 @@
 !/docs/VERIFICATION.md
 !/docs/HANDOFF.md
 !/docs/CLEAN_MIC.md
+!/compat/probe_library.h
+!/setup.py
+!/install.sh
+!/package-runtime.py
+!/tests/
+!/tests/test_setup.py
+!/docs/INSTALLATION.md

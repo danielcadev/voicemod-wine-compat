@@ -2,10 +2,11 @@
 #include <windows.h>
 #include <stdio.h>
 #include <string.h>
+#include "probe_library.h"
 int main(int argc, char **argv)
 {
     if (argc > 2 && !strcmp(argv[2], "--compat") &&
-        !LoadLibraryW(L"Z:\\home\\USERNAME\\voicemod_research\\compat\\version.dll")) {
+        !load_probe_library()) {
         printf("FAIL load compatibility DLL error=%lu\n", GetLastError()); return 9;
     }
     HANDLE d = CreateFileW(L"\\\\.\\voicemodvad", GENERIC_READ | GENERIC_WRITE,

@@ -40,3 +40,7 @@ Clean Mic was left enabled, with Voice Volume 100 and Bass/Mid/Treble 50. Hear M
 Use explicit PulseAudio monitor devices with parecord and verify actual routes. A PulseAudio monitor name passed as a pw-record target can fall back to the default microphone and invalidate the result.
 
 The bridge runs in Wine user space; it does not execute the proprietary Windows kernel driver. Continuous capture lasts while the app is open and is not native client-activity detection. Other voices have not been tested individually. The library's earlier placeholder behavior resolved during normal startup; its exact cause was not established.
+
+## Easy-setup preview
+
+The subsequently added v0.1.0 installer passed nine isolated behavior tests and desktop-entry validation. Its newly compiled components also passed a real fresh-prefix full control-device probe and real audio-session callback probe, using executable-relative DLL paths and an install path containing spaces. System audio defaults remained unchanged. No vendor installer or fresh account login was exercised by that smoke check; that full journey remains unverified. See [installation documentation](INSTALLATION.md).
